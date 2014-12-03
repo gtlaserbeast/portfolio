@@ -47,7 +47,7 @@
         #mobile-menu-icon.visible-xs{:onclick => "toggle_main_menu();"}
           %span.glyphicon.glyphicon-th
         %ul#main-menu
-          %li#menu-item-text.menu-item.scroll
+          %li#menu-item-bio.menu-item.scroll
             %a{:href => "#bio"} Bio
           %li#menu-item-carousel.menu-item.scroll
             %a{:href => "#carousel"} Carousel
@@ -396,7 +396,10 @@
             %a{:href => "#", :target => "_blank", :title => "Google+"}
               %img{:alt => "Google+", :src => "images/theme_images/social_icons/googleplus.png"}/
         / copyright text
-        .footer-text-line © 2014 Twilli | Air
+        .footer-text-line © 2014 
+        %a{:href => "mailto:willcfisherjr@gmail.com?subject=[world-wide-will] Hello!"} willcfisherjr@gmail.com
+        .footer-text-line | 
+        %a{:href => "tel:843-263-3471"} (843)263-3471
       / end: Footer
     / #outer-container
     / end: Outer Container

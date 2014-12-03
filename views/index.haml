@@ -1,0 +1,448 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %meta{:content => "", :name => "description"}/
+    %meta{:content => "", :name => "author"}/
+    %title Will C. Fisher, Jr | Web Developer
+    / favicon
+    %link{:href => "images/other_images/favicon.png", :rel => "icon", :type => "image/png"}/
+    / Bootstrap core CSS
+    %link{:href => "bootstrap/css/bootstrap.min.css", :rel => "stylesheet"}/
+    / Bootstrap theme
+    %link{:href => "bootstrap/css/bootstrap-theme.min.css", :rel => "stylesheet"}/
+    / owl carousel css
+    %link{:href => "js/owl-carousel/owl.carousel.css", :rel => "stylesheet"}/
+    %link{:href => "js/owl-carousel/owl.theme.css", :rel => "stylesheet"}/
+    %link{:href => "js/owl-carousel/owl.transitions.css", :rel => "stylesheet"}/
+    / intro animations
+    %link{:href => "js/wow/animate.css", :rel => "stylesheet"}/
+    / font awesome
+    %link{:href => "css/font-awesome/css/font-awesome.min.css", :rel => "stylesheet"}/
+    / lightbox
+    %link{:href => "js/lightbox/css/lightbox.css", :rel => "stylesheet"}/
+    / styles for this template
+    %link{:href => "css/styles.css", :rel => "stylesheet"}/
+    / place your extra custom styles in this file
+    %link{:href => "css/custom.css", :rel => "stylesheet"}/
+    / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+    /[if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+  %body
+    .background-image-overlay
+    #outer-background-container{"data-default-background-img" => "images/other_images/bg5.jpg", :style => "background-image:url(images/other_images/bg5.jpg);"}
+    / end: #outer-background-container
+    / Outer Container
+    #outer-container
+      / Left Sidebar
+      %section#left-sidebar
+        .logo
+          %a.link-scroll{:href => "#intro"}
+            %img{:alt => "Will C. Fisher, Jr.", :src => "images/other_images/wf_logo.png"}/
+        / .logo
+        / Menu Icon for smaller viewports
+        #mobile-menu-icon.visible-xs{:onclick => "toggle_main_menu();"}
+          %span.glyphicon.glyphicon-th
+        %ul#main-menu
+          %li#menu-item-text.menu-item.scroll
+            %a{:href => "#bio"} Bio
+          %li#menu-item-carousel.menu-item.scroll
+            %a{:href => "#carousel"} Carousel
+          %li#menu-item-grid.menu-item.scroll
+            %a{:href => "#grid"} Grid
+          %li#menu-item-featured.menu-item.scroll
+            %a{:href => "#featured"} Featured
+          %li#menu-item-contact.menu-item.scroll
+            %a{:href => "#contact"} Contact
+        / #main-menu
+      / #left-sidebar
+      / end: Left Sidebar
+      %section#main-content.clearfix
+        %article#intro.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg5.jpg"}
+          .content-wrapper.clearfix.wow.fadeInDown{"data-wow-delay" => "0.3s"}
+            .col-sm-10.col-md-9.pull-right
+              %section.feature-text
+                %h1 Will C. Fisher, Jr
+                %p Rubying, Tinkering, and Advancing Functionality
+                %p
+                  %a.link-scroll.btn.btn-outline-inverse.btn-lg{:href => "#bio"} find out more
+        %article#bio.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg1.jpg"}
+          .content-wrapper.clearfix
+            .col-sm-10.col-md-9.pull-right
+              %h1.section-title About Me
+              %p.feature-paragraph
+                %img.lazy.pull-right{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/willfisher.jpg"}>/
+                Since an early age, the search for technological prowess has been a primary focus in my life. My inherent adaptability has often allowed me to harness technologies to improve the efficiency of my family's life as well as my own. I hope to continue my quest to improve the efficacy of whatever technological implementation with which I am presented.
+              %p
+                = succeed "," do
+                  %a{:href => "#carousel"} Check out some of my work!
+              %h4 Exceptional Analysis
+              %p Everyday, the technological landscape is changed by the introduction of new and often paradigm-shifting tools and methods. Let my need to stay abreast of these changes help you!
+              %p
+                %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-1');"} read more
+              #modal-content-1.content-to-populate-in-modal
+                %h1 Lorem Ipsum
+                %p
+                  %img.lazy.rounded_border.hover_effect.pull-right{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image4.png"}>/
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in urna vel ante mollis tincidunt. Donec nec magna condimentum tortor laoreet lobortis. Nunc accumsan sapien eu tortor fringilla, et condimentum metus pellentesque. Maecenas rhoncus tortor nec mi congue aliquet. Integer eu turpis scelerisque, iaculis magna non, tempor sem. Quisque consectetur nisi eu felis euismod, sit amet faucibus justo molestie. Ut pretium sapien dui, id facilisis metus interdum pharetra.
+                %p Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.
+                %h3 Duis dictum lorem metus, vitae dapibus
+                %p
+                  %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image3.png"}>/
+                  Sed auctor urna mi, sed fringilla felis vulputate nec. Cras eu nibh id quam pretium convallis. Donec ante enim, placerat nec sagittis sit amet, tempor in velit. Maecenas ultricies commodo lacus id porta. Suspendisse eros elit, lacinia vitae erat vitae, egestas accumsan nunc. Maecenas dictum odio ipsum, non volutpat erat consequat tempor. Pellentesque sed malesuada turpis. Quisque eget lacus sit amet dui feugiat molestie sit amet eget purus. Morbi eget neque nec lectus tempus sagittis nec at ante.
+                %p Etiam scelerisque lacus tempor, rhoncus diam vel, gravida felis. Fusce tristique sem et leo aliquam vulputate. Ut eget orci in sapien commodo fringilla. Ut luctus faucibus viverra. Quisque ut ante eget libero rutrum imperdiet. Morbi in diam bibendum, venenatis arcu sed, consequat libero. Nulla imperdiet, ipsum et adipiscing pulvinar, nibh metus porta mauris, et vestibulum dolor sapien sit amet justo. In dignissim leo nec erat faucibus volutpat.
+              / #modal-content-1
+            / .col-sm-10
+          / .content-wrapper
+        / .section-wrapper
+        %article#carousel.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg6.jpg"}
+          .content-wrapper.clearfix
+            #features-carousel.carousel.slide.with-title-indicators.max-height{"data-height-percent" => "70", "data-ride" => "carousel"}
+              / Indicators - slide navigation
+              %ol.carousel-indicators.title-indicators
+                %li.active{"data-slide-to" => "0", "data-target" => "#features-carousel"} Lorem Ipsum
+                %li{"data-slide-to" => "1", "data-target" => "#features-carousel"} Suspendisse
+                %li{"data-slide-to" => "2", "data-target" => "#features-carousel"} Maecenas
+                %li{"data-slide-to" => "3", "data-target" => "#features-carousel"} Scelerisque
+              / Wrapper for slides
+              .carousel-inner
+                .item.active
+                  .carousel-text-content
+                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image1.png"}/
+                    %h2.title Lorem Ipsum
+                    %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.
+                    %p
+                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-2');"} read more
+                    #modal-content-2.content-to-populate-in-modal
+                      %h1 Lorem Ipsum
+                      %p
+                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image1.png"}>/
+                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                        = succeed "," do
+                          %a{:href => "#"} Suspendisse molestie lorem odio
+                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
+                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
+                    / #modal-content-2
+                / .item
+                .item
+                  .carousel-text-content
+                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image6.png"}/
+                    %h2.title Suspendisse molestie
+                    %p Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.
+                    %p
+                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-3');"} read more
+                    #modal-content-3.content-to-populate-in-modal
+                      %h1 Suspendisse molestie
+                      %p
+                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image6.png"}>/
+                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                        = succeed "," do
+                          %a{:href => "#"} Suspendisse molestie lorem odio
+                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
+                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
+                    / #modal-content-3
+                / .item
+                .item
+                  .carousel-text-content
+                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image7.png"}/
+                    %h2.title Maecenas id dolor
+                    %p Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.
+                    %p
+                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-4');"} read more
+                    #modal-content-4.content-to-populate-in-modal
+                      %h1 Maecenas id dolor
+                      %p
+                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image7.png"}>/
+                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                        = succeed "," do
+                          %a{:href => "#"} Suspendisse molestie lorem odio
+                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
+                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
+                    / #modal-content-4
+                / .item
+                .item
+                  .carousel-text-content
+                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image4.png"}/
+                    %h2.title Sed scelerisque
+                    %p Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien.
+                    %p
+                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-5');"} read more
+                    #modal-content-5.content-to-populate-in-modal
+                      %h1 Sed scelerisque
+                      %p
+                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image4.png"}>/
+                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
+                        = succeed "," do
+                          %a{:href => "#"} Suspendisse molestie lorem odio
+                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
+                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
+                    / #modal-content-5
+                / .item
+              / .carousel-inner
+              / Controls
+              %a.left.carousel-control{"data-slide" => "prev", :href => "#features-carousel"}
+              %a.right.carousel-control{"data-slide" => "next", :href => "#features-carousel"}
+            / #about-carousel
+          / .content-wrapper
+        / .section-wrapper
+        %article#grid.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg2.jpg"}
+          .content-wrapper.clearfix
+            .col-sm-11.col-md-10.pull-right
+              %h1.section-title Grid
+              / grid
+              %section.grid.row.clearfix.clearfix-for-2cols
+                / grid item
+                .grid-item.col-md-6
+                  .item-content.clearfix
+                    %span.icon.glyphicon.glyphicon-stats
+                    .text-content
+                      %h5 Lorem ipsum dolor sit amet
+                      %p Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.
+                  / end: .item-content
+                / end: .grid-item
+                / grid item
+                .grid-item.col-md-6
+                  .item-content.clearfix
+                    %span.icon.glyphicon.glyphicon-record
+                    .text-content
+                      %h5 Aliquam adipiscing eros non elit
+                      %p Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.
+                  / end: .item-content
+                / end: .grid-item
+                / grid item
+                .grid-item.col-md-6
+                  .item-content.clearfix
+                    %span.icon.glyphicon.glyphicon-lock
+                    .text-content
+                      %h5 Integer ultricies sed ligula
+                      %p Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.
+                  / end: .item-content
+                / end: .grid-item
+                / grid item
+                .grid-item.col-md-6
+                  .item-content.clearfix
+                    %span.icon.glyphicon.glyphicon-file
+                    .text-content
+                      %h5 Lorem ipsum dolor sit amet
+                      %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.
+                  / end: .item-content
+                / end: .grid-item
+              / end: grid
+            / .col-sm-11
+          / .content-wrapper
+        / .section-wrapper
+        %article#featured.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg3.jpg"}
+          .content-wrapper.clearfix
+            .col-sm-11.pull-right
+              %h1.section-title Featured
+              / feature columns
+              %section.feature-columns.row.clearfix
+                / feature 1
+                %article.feature-col.col-md-4
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-6');"}
+                    .image-container
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-3.jpg"}/
+                    .caption
+                      %h5 Image Carousel
+                      %p This feature contains an image carousel when you open popup.
+                    / .caption
+                  / .thumbnail
+                  #modal-content-6.content-to-populate-in-modal
+                    %h1 Sed scelerisque
+                    %p
+                      Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.
+                      %br/
+                    / image slider inside popup
+                    #unique-id-for-image-slider.owl-carousel.popup-image-gallery
+                      / slide
+                      %div
+                        / caption is optional. To remove it, remove the <h6> below
+                        %h6.caption Caption for Image 1
+                        %img.lazyOwl{"data-src" => "images/other_images/bg1.jpg"}/
+                      / slide
+                      %div
+                        %h6.caption Caption for Image 2
+                        %img.lazyOwl{"data-src" => "images/other_images/bg2.jpg"}/
+                      / slide
+                      %div
+                        %h6.caption Caption for Image 3
+                        %img.lazyOwl{"data-src" => "images/other_images/bg3.jpg"}/
+                  / #modal-content-6
+                / feature 2
+                %article.feature-col.col-md-4
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-7');"}
+                    .image-container
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-2.jpg"}/
+                    .caption
+                      %h5 Text popup
+                      %p This feature contains generic image and text content when you open popup.
+                    / .caption
+                  / .thumbnail
+                  #modal-content-7.content-to-populate-in-modal
+                    %img.lazy.full-width{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/top-image2.jpg"}/
+                    %h1 Sed scelerisque
+                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
+                    %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
+                    %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
+                  / #modal-content-7
+                / feature 3
+                %article.feature-col.col-md-4
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
+                    .image-container
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
+                    .caption
+                      %h5 Alternate Gallery
+                      %p Inside this feature's popup you'll find an alternative version of an image gallery.
+                    / .caption
+                  / .thumbnail
+                  #modal-content-8.content-to-populate-in-modal
+                    %h1 Sed scelerisque
+                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
+                    / alt image slider inside popup
+                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                  / #modal-content-8
+              / end: .feature-columns
+              / End: Section content to edit
+            / .col-sm-10
+          / .content-wrapper
+        / .section-wrapper
+        %article#contact.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg4.jpg"}
+          .content-wrapper.clearfix
+            %h1.section-title Contact
+            / CONTACT DETAILS
+            .contact-details.col-sm-5.col-md-3
+              %p
+                123A,
+                %br>/
+                Molestie Lorem Avenue,
+                %br>/
+                Aliquam
+                %br>/
+                AAA0010
+              %p Tel: (+20) 21 301 524
+              %p
+                %a{:href => "mailto:info@loremipsum.com"} info@loremipsum.com
+            / END: CONTACT DETAILS
+            / CONTACT FORM
+            .col-sm-7.col-md-9
+              / IMPORTANT: change the email address at the top of the php/mail.php file to the email address that you want this form to send to
+              %form.form-style.validate-form.clearfix{:action => "php/mail.php", :method => "POST", :role => "form"}
+                / form left col
+                .col-md-6
+                  .form-group
+                    %input#form-name.text-field.form-control.validate-field.required{"data-validation-type" => "string", :name => "name", :placeholder => "Full Name", :type => "text"}/
+                  .form-group
+                    %input#form-email.text-field.form-control.validate-field.required{"data-validation-type" => "email", :name => "email", :placeholder => "Email Address", :type => "email"}/
+                  .form-group
+                    %input#form-contact-number.text-field.form-control.validate-field.phone{"data-validation-type" => "phone", :name => "contact_number", :placeholder => "Contact Number", :type => "tel"}/
+                  .form-group.text-right
+                    %img#form-captcha-img{:src => "php/form_captcha/captcha_img.php"}/
+                    %input#form-captcha.text-field.form-control.validate-field.required{"data-validation-type" => "captcha", :name => "captcha", :placeholder => "Enter text", :type => "text"}/
+                    %span#form-captcha-refresh.fa.fa-refresh{:title => "Reload"}
+                / end: form left col
+                / form right col
+                .col-md-6
+                  .form-group
+                    %textarea.form-control.validate-field.required{:name => "message", :placeholder => "Message..."}
+                  .form-group
+                    %img.form-loader{:src => "images/theme_images/loader-form.GIF"}/
+                    %button.btn.btn-sm.btn-outline-inverse{:type => "submit"} Submit
+                  .form-group.form-general-error-container
+                / end: form right col
+            / end: CONTACT FORM
+          / .content-wrapper
+        / .section-wrapper
+      / #main-content
+      / Footer
+      %section#footer
+        / Go to Top
+        #go-to-top{:onclick => "scroll_to_top();"}
+          %span.icon.glyphicon.glyphicon-chevron-up
+        %ul.social-icons
+          %li
+            %a{:href => "#", :target => "_blank", :title => "Facebook"}
+              %img{:alt => "Facebook", :src => "images/theme_images/social_icons/facebook.png"}/
+          %li
+            %a{:href => "#", :target => "_blank", :title => "Twitter"}
+              %img{:alt => "Twitter", :src => "images/theme_images/social_icons/twitter.png"}/
+          %li
+            %a{:href => "#", :target => "_blank", :title => "Google+"}
+              %img{:alt => "Google+", :src => "images/theme_images/social_icons/googleplus.png"}/
+        / copyright text
+        .footer-text-line © 2014 Twilli | Air
+      / end: Footer
+    / #outer-container
+    / end: Outer Container
+    / Modal
+    / DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it
+    #common-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
+      .modal-dialog
+        .modal-content
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+          .modal-body
+          / .modal-body
+        / .modal-content
+      / .modal-dialog
+    / .modal
+    /
+      Javascripts
+      \==================================================
+    / Jquery and Bootstrap JS
+    %script{:src => "http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"}
+    :javascript
+      window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')
+    %script{:src => "bootstrap/js/bootstrap.min.js"}
+    / Easing - for transitions and effects
+    %script{:src => "js/jquery.easing.1.3.js"}
+    / background image strech script
+    %script{:src => "js/jquery.backstretch.min.js"}
+    /
+      background image fix for IE 9 or less
+      \- use same background as set above to <body>
+    /[if lt IE 9]
+      <script type="text/javascript">
+      $(document).ready(function(){
+      jQuery("#outer-background-container").backstretch("images/other_images/bg5.jpg");
+      });
+      </script>
+    / detect mobile browsers
+    %script{:src => "js/detectmobilebrowser.js"}
+    / owl carousel js
+    %script{:src => "js/owl-carousel/owl.carousel.min.js"}
+    / lightbox js
+    %script{:src => "js/lightbox/js/lightbox.min.js"}
+    / intro animations
+    %script{:src => "js/wow/wow.min.js"}
+    / Custom functions for this theme
+    %script{:src => "js/functions.js"}
+    %script{:src => "js/initialise-functions.js"}
+    / IE9 form fields placeholder fix
+    /[if lt IE 9]
+      <script>contact_form_IE9_placeholder_fix();</script>

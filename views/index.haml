@@ -54,7 +54,7 @@
           %li#menu-item-grid.menu-item.scroll
             %a{:href => "#grid"} Grid
           %li#menu-item-featured.menu-item.scroll
-            %a{:href => "#featured"} Featured
+            %a{:href => "#featured"} My Work
           %li#menu-item-contact.menu-item.scroll
             %a{:href => "#contact"} Contact
         / #main-menu
@@ -105,6 +105,127 @@
                   , or
                   give me a call:
                   %a{:href => "tel:+18432633471"} (843)263-3471
+        %article#featured.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg3.jpg"}
+          .content-wrapper.clearfix
+            .col-sm-11.pull-right
+              %h1.section-title My Work
+              / feature columns
+              %section.feature-columns.row.clearfix
+                / feature 1
+                %article.feature-col.col-md-4
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
+                    .image-container
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
+                    .caption
+                      %h5 Little Old Landlady
+                      %p A web application for management of rental properties.
+                    / .caption
+                  / .thumbnail
+                  #modal-content-8.content-to-populate-in-modal
+                    %h1 Sed scelerisque
+                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
+                    / alt image slider inside popup
+                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                %article.feature-col.col-md-4
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
+                    .image-container
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
+                    .caption
+                      %h5 Alternate Gallery
+                      %p Inside this feature's popup you'll find an alternative version of an image gallery.
+                    / .caption
+                  / .thumbnail
+                  #modal-content-8.content-to-populate-in-modal
+                    %h1 Sed scelerisque
+                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
+                    / alt image slider inside popup
+                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                %article.feature-col.col-md-4
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
+                    .image-container
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
+                    .caption
+                      %h5 Alternate Gallery
+                      %p Inside this feature's popup you'll find an alternative version of an image gallery.
+                    / .caption
+                  / .thumbnail
+                  #modal-content-8.content-to-populate-in-modal
+                    %h1 Sed scelerisque
+                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
+                    / alt image slider inside popup
+                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                      .item
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
+                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
         %article#carousel.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg6.jpg"}
           .content-wrapper.clearfix
             #features-carousel.carousel.slide.with-title-indicators.max-height{"data-height-percent" => "70", "data-ride" => "carousel"}
@@ -239,105 +360,6 @@
                 / end: .grid-item
               / end: grid
             / .col-sm-11
-          / .content-wrapper
-        / .section-wrapper
-        %article#featured.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg3.jpg"}
-          .content-wrapper.clearfix
-            .col-sm-11.pull-right
-              %h1.section-title Featured
-              / feature columns
-              %section.feature-columns.row.clearfix
-                / feature 1
-                %article.feature-col.col-md-4
-                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-6');"}
-                    .image-container
-                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-3.jpg"}/
-                    .caption
-                      %h5 Image Carousel
-                      %p This feature contains an image carousel when you open popup.
-                    / .caption
-                  / .thumbnail
-                  #modal-content-6.content-to-populate-in-modal
-                    %h1 Sed scelerisque
-                    %p
-                      Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat.
-                      %br/
-                    / image slider inside popup
-                    #unique-id-for-image-slider.owl-carousel.popup-image-gallery
-                      / slide
-                      %div
-                        / caption is optional. To remove it, remove the <h6> below
-                        %h6.caption Caption for Image 1
-                        %img.lazyOwl{"data-src" => "images/other_images/bg1.jpg"}/
-                      / slide
-                      %div
-                        %h6.caption Caption for Image 2
-                        %img.lazyOwl{"data-src" => "images/other_images/bg2.jpg"}/
-                      / slide
-                      %div
-                        %h6.caption Caption for Image 3
-                        %img.lazyOwl{"data-src" => "images/other_images/bg3.jpg"}/
-                  / #modal-content-6
-                / feature 2
-                %article.feature-col.col-md-4
-                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-7');"}
-                    .image-container
-                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-2.jpg"}/
-                    .caption
-                      %h5 Text popup
-                      %p This feature contains generic image and text content when you open popup.
-                    / .caption
-                  / .thumbnail
-                  #modal-content-7.content-to-populate-in-modal
-                    %img.lazy.full-width{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/top-image2.jpg"}/
-                    %h1 Sed scelerisque
-                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
-                    %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
-                    %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
-                  / #modal-content-7
-                / feature 3
-                %article.feature-col.col-md-4
-                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
-                    .image-container
-                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
-                    .caption
-                      %h5 Alternate Gallery
-                      %p Inside this feature's popup you'll find an alternative version of an image gallery.
-                    / .caption
-                  / .thumbnail
-                  #modal-content-8.content-to-populate-in-modal
-                    %h1 Sed scelerisque
-                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
-                    / alt image slider inside popup
-                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
-                  / #modal-content-8
-              / end: .feature-columns
-              / End: Section content to edit
-            / .col-sm-10
           / .content-wrapper
         / .section-wrapper
         %article#contact.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg4.jpg"}

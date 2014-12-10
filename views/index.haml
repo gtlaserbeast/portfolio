@@ -52,7 +52,7 @@
           %li#menu-item-featured.menu-item.scroll
             %a{:href => "#featured", :title => "Some of my work!"} My Work
           %li#menu-item-grid.menu-item.scroll
-            %a{:href => "#grid", :title => "A way to display a series of facts."} Grid
+            %a{:href => "#grid", :title => "A way to display a series of facts."} Surprise & Delight
         / #main-menu
       / #left-sidebar
       / end: Left Sidebar
@@ -108,7 +108,7 @@
               %section.feature-columns.row.clearfix
                 / feature 1
                 %article.feature-col.col-md-4
-                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'lol-content', '', 'full-size');"}
                     .image-container
                       %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/lol/1.png"}/
                     .caption
@@ -116,11 +116,11 @@
                       %p Little Old Landlady is a responsive web-tool for low impact interaction between property owners and tenants.
                     / .caption
                   / .thumbnail
-                  #modal-content-8.content-to-populate-in-modal
+                  #lol-content.content-to-populate-in-modal
                     %h1 Little Old Landlady
                     %p Little Old Landlady is an app built using Rails 4.1, Postgresql, Bootstrap, Twilio, and Google Maps API, designed to aid in the management of rental properties and related concerns.
                     / alt image slider inside popup
-                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
+                    #lol-slider.owl-carousel.popup-alt-image-gallery
                       .item
                         %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/1.png"}
                           %img.lazyOwl{"data-src" => "images/other_images/lol/1_thumb.png"}/
@@ -146,85 +146,29 @@
                         %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/8.png"}
                           %img.lazyOwl{"data-src" => "images/other_images/lol/8_thumb.png"}/
                 %article.feature-col.col-md-4
-                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
+                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'edm-content', '', 'full-size');"}
                     .image-container
-                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
+                      %img.lazy.item-thumbnail{:alt => "Eric Daubert Music", "data-img-src" => "images/other_images/edm/1.png"}/
                     .caption
-                      %h5 Alternate Gallery
-                      %p Inside this feature's popup you'll find an alternative version of an image gallery.
+                      %h5 Eric Daubert Music
+                      %p One of the Lowcountry's premier live musicians! Eric is available for your event or venue.
                     / .caption
                   / .thumbnail
-                  #modal-content-8.content-to-populate-in-modal
-                    %h1 Sed scelerisque
-                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
+                  #edm-content.content-to-populate-in-modal
+                    %h1 Eric Daubert Music
+                    %p Eric and I are in the process of marketing his act to the web.
                     / alt image slider inside popup
-                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
+                    #edm-slider.owl-carousel.popup-alt-image-gallery
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/edm/1.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/edm/1_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
-                %article.feature-col.col-md-4
-                  %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
-                    .image-container
-                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
-                    .caption
-                      %h5 Alternate Gallery
-                      %p Inside this feature's popup you'll find an alternative version of an image gallery.
-                    / .caption
-                  / .thumbnail
-                  #modal-content-8.content-to-populate-in-modal
-                    %h1 Sed scelerisque
-                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
-                    / alt image slider inside popup
-                    #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
-                      .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/edm/2.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/edm/2_thumb.png"}/
         %article#grid.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg2.jpg"}
           .content-wrapper.clearfix
             .col-sm-11.col-md-10.pull-right
-              %h1.section-title Grid
+              %h1.section-title Surprise & Delight
               / grid
               %section.grid.row.clearfix.clearfix-for-2cols
                 / grid item

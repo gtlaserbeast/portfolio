@@ -51,12 +51,8 @@
             %a{:href => "#bio", :title => "More about me!"} Bio
           %li#menu-item-featured.menu-item.scroll
             %a{:href => "#featured", :title => "Some of my work!"} My Work
-          %li#menu-item-carousel.menu-item.scroll
-            %a{:href => "#carousel", :title => "a place where I might put things"} Carousel
           %li#menu-item-grid.menu-item.scroll
             %a{:href => "#grid", :title => "A way to display a series of facts."} Grid
-          %li#menu-item-contact.menu-item.scroll
-            %a{:href => "#contact"} Contact
         / #main-menu
       / #left-sidebar
       / end: Left Sidebar
@@ -114,41 +110,41 @@
                 %article.feature-col.col-md-4
                   %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
                     .image-container
-                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/project-4.jpg"}/
+                      %img.lazy.item-thumbnail{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/lol/1.png"}/
                     .caption
                       %h5 Little Old Landlady
-                      %p A web application for management of rental properties.
+                      %p Little Old Landlady is a responsive web-tool for low impact interaction between property owners and tenants.
                     / .caption
                   / .thumbnail
                   #modal-content-8.content-to-populate-in-modal
-                    %h1 Sed scelerisque
-                    %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet. Adipiscing eros non elit imperdiet congue tiam at ligula sit amet arcu.
+                    %h1 Little Old Landlady
+                    %p Little Old Landlady is an app built using Rails 4.1, Postgresql, Bootstrap, Twilio, and Google Maps API, designed to aid in the management of rental properties and related concerns.
                     / alt image slider inside popup
                     #unique-id-for-alt-image-slider.owl-carousel.popup-alt-image-gallery
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg1.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-1.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/1.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/1_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/2.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/2_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/3.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/3_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg4.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-4.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/4.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/4_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg5.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-5.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/5.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/5_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg6.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-6.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/6.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/6_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg2.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-2.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/7.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/7_thumb.png"}/
                       .item
-                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
-                          %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
+                        %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/lol/8.png"}
+                          %img.lazyOwl{"data-src" => "images/other_images/lol/8_thumb.png"}/
                 %article.feature-col.col-md-4
                   %a.thumbnail.linked{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-8', '', 'full-size');"}
                     .image-container
@@ -225,96 +221,6 @@
                       .item
                         %a{"data-lightbox" => "popup-alt-gallery", :href => "images/other_images/bg3.jpg"}
                           %img.lazyOwl{"data-src" => "images/other_images/gallery-thumb-3.jpg"}/
-        %article#carousel.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg6.jpg"}
-          .content-wrapper.clearfix
-            #features-carousel.carousel.slide.with-title-indicators.max-height{"data-height-percent" => "70", "data-ride" => "carousel"}
-              / Indicators - slide navigation
-              %ol.carousel-indicators.title-indicators
-                %li.active{"data-slide-to" => "0", "data-target" => "#features-carousel"} Lorem Ipsum
-                %li{"data-slide-to" => "1", "data-target" => "#features-carousel"} Suspendisse
-                %li{"data-slide-to" => "2", "data-target" => "#features-carousel"} Maecenas
-                %li{"data-slide-to" => "3", "data-target" => "#features-carousel"} Scelerisque
-              / Wrapper for slides
-              .carousel-inner
-                .item.active
-                  .carousel-text-content
-                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image1.png"}/
-                    %h2.title Lorem Ipsum
-                    %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio.
-                    %p
-                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-2');"} read more
-                    #modal-content-2.content-to-populate-in-modal
-                      %h1 Lorem Ipsum
-                      %p
-                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image1.png"}>/
-                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                        = succeed "," do
-                          %a{:href => "#"} Suspendisse molestie lorem odio
-                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
-                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
-                    / #modal-content-2
-                / .item
-                .item
-                  .carousel-text-content
-                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image6.png"}/
-                    %h2.title Suspendisse molestie
-                    %p Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Duis dictum lorem metus.
-                    %p
-                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-3');"} read more
-                    #modal-content-3.content-to-populate-in-modal
-                      %h1 Suspendisse molestie
-                      %p
-                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image6.png"}>/
-                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                        = succeed "," do
-                          %a{:href => "#"} Suspendisse molestie lorem odio
-                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
-                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
-                    / #modal-content-3
-                / .item
-                .item
-                  .carousel-text-content
-                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image7.png"}/
-                    %h2.title Maecenas id dolor
-                    %p Fusce erat augue, fermentum sit amet congue a, ullamcorper ac enim. Maecenas id dolor imperdiet, mollis felis ut, pellentesque ante. Sed id congue arcu. Nulla eget commodo sem. Suspendisse suscipit, sem ac.
-                    %p
-                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-4');"} read more
-                    #modal-content-4.content-to-populate-in-modal
-                      %h1 Maecenas id dolor
-                      %p
-                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image7.png"}>/
-                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                        = succeed "," do
-                          %a{:href => "#"} Suspendisse molestie lorem odio
-                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
-                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
-                    / #modal-content-4
-                / .item
-                .item
-                  .carousel-text-content
-                    %img.icon{:alt => "Lorem Ipsum", :src => "images/other_images/transp-image4.png"}/
-                    %h2.title Sed scelerisque
-                    %p Aenean a est fringilla, malesuada eros vel, condimentum augue. Sed lorem sapien, vestibulum quis nisl volutpat, fermentum adipiscing massa. Cras ac faucibus nisl. Proin ac convallis sapien.
-                    %p
-                      %a.btn.btn-outline-inverse.btn-sm{:href => "", :onclick => "populate_and_open_modal(event, 'modal-content-5');"} read more
-                    #modal-content-5.content-to-populate-in-modal
-                      %h1 Sed scelerisque
-                      %p
-                        %img.lazy.rounded_border.hover_effect.pull-left{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/transp-image4.png"}>/
-                        Etiam at ligula sit amet arcu laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec.
-                        = succeed "," do
-                          %a{:href => "#"} Suspendisse molestie lorem odio
-                      %p Laoreet consequat. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio, sit amet.
-                      %p Suspendisse molestie lorem odio, sit amet. Duis dictum lorem metus, vitae dapibus risus imperdiet nec. Suspendisse molestie lorem odio test.
-                    / #modal-content-5
-                / .item
-              / .carousel-inner
-              / Controls
-              %a.left.carousel-control{"data-slide" => "prev", :href => "#features-carousel"}
-              %a.right.carousel-control{"data-slide" => "next", :href => "#features-carousel"}
-            / #about-carousel
-          / .content-wrapper
-        / .section-wrapper
         %article#grid.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg2.jpg"}
           .content-wrapper.clearfix
             .col-sm-11.col-md-10.pull-right
@@ -425,6 +331,9 @@
           %li
             %a{:href => "https://gtlaserbeast.github.io", :target => "_blank", :title => "Octopress Blog"}
               %img{:alt => "Octopress Blog", :src => "images/theme_images/social_icons/sharethis.png"}/
+          %li
+            %a{:href => "https://www.linkedin.com/in/willcfisherjr/", :target => "_blank", :title => "Linkedin"}
+              %img{:alt => "linkedin", :src => "images/theme_images/social_icons/linkedin.png"}/
         / copyright text
         .footer-text-line © 2014 
         %a{:href => "mailto:willcfisherjr@gmail.com?subject=[world-wide-will] Hello!", :title => "willcfisherjr@gmail.com"} willcfisherjr@gmail.com

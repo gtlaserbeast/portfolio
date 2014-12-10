@@ -6,7 +6,7 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
     %meta{:content => "", :name => "description"}/
     %meta{:content => "", :name => "author"}/
-    %title Will C. Fisher, Jr | Web Developer
+    %title Will C. Fisher, Jr | Bitsmith
     / favicon
     %link{:href => "images/other_images/favicon.png", :rel => "icon", :type => "image/png"}/
     / Bootstrap core CSS
@@ -40,7 +40,7 @@
       / Left Sidebar
       %section#left-sidebar
         .logo
-          %a.link-scroll{:href => "#intro"}
+          %a.link-scroll{:href => "#intro", :title => "The World Wide Will"}
             %img{:alt => "Will C. Fisher, Jr.", :src => "images/other_images/wf_logo.png"}/
         / .logo
         / Menu Icon for smaller viewports
@@ -48,13 +48,13 @@
           %span.glyphicon.glyphicon-th
         %ul#main-menu
           %li#menu-item-bio.menu-item.scroll
-            %a{:href => "#bio"} Bio
-          %li#menu-item-carousel.menu-item.scroll
-            %a{:href => "#carousel"} Carousel
-          %li#menu-item-grid.menu-item.scroll
-            %a{:href => "#grid"} Grid
+            %a{:href => "#bio", :title => "More about me!"} Bio
           %li#menu-item-featured.menu-item.scroll
-            %a{:href => "#featured"} My Work
+            %a{:href => "#featured", :title => "Some of my work!"} My Work
+          %li#menu-item-carousel.menu-item.scroll
+            %a{:href => "#carousel", :title => "a place where I might put things"} Carousel
+          %li#menu-item-grid.menu-item.scroll
+            %a{:href => "#grid", :title => "A way to display a series of facts."} Grid
           %li#menu-item-contact.menu-item.scroll
             %a{:href => "#contact"} Contact
         / #main-menu
@@ -68,13 +68,13 @@
                 %h1 Will C. Fisher, Jr
                 %p Rubying, Tinkering, and Advancing Functionality
                 %p
-                  %a.link-scroll.btn.btn-outline-inverse.btn-lg{:href => "#bio"} find out more
+                  %a.link-scroll.btn.btn-outline-inverse.btn-lg{:href => "#bio", :title => "jump to bio"} find out more
         %article#bio.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg1.jpg"}
           .content-wrapper.clearfix
             .col-sm-10.col-md-9.pull-right
               %h1.section-title About Me
               %p.feature-paragraph
-                %img.lazy.rounded_border.hover_effect.pull-right{:alt => "Lorem Ipsum", "data-img-src" => "images/other_images/willfisher.jpg"}>/
+                %img.lazy.rounded_border.hover_effect.pull-right{:alt => "The visage of Terror", "data-img-src" => "images/other_images/willfisher.jpg"}>/
                 Since an early age, the search for technological prowess has been a primary focus in my life. My inherent adaptability has often allowed me to harness technologies to improve the efficiency of my family's life as well as my own. I hope to continue my quest to improve the efficacy of whatever technological implementation with which I am presented.
               %p
                 = succeed "," do
@@ -88,20 +88,19 @@
                 %p
                   %img.lazy.rounded_border.hover_effect.pull-right{:alt => "Little Old Landlady", "data-img-src" => "images/other_images/lol.png"}>/
                   Author of the renowned web-based rental-management tool,
-                  %a{:href => "http://little-old-landlady.herokuapp.com/"} Little Old Landlady, 
-                  a Rubyist, and a professional ponderer.
+                  %a{:href => "http://little-old-landlady.herokuapp.com/"} Little Old Landlady
+                  , a Rubyist, and a professional ponderer.
                 %p
-                  Take a look at my
-                  = succeed "!" do
-                    %a{:href => "http://blooming-river-1772.herokuapp.com"} resume
+                  Peruse my 
+                  %a{:href => "http://gtlaserbeast.github.io"} blog, 
+                  take a look at my
+                  %a{:href => "http://blooming-river-1772.herokuapp.com"} resume
                   , or have a gander at my collection of
-                  = succeed "!" do
-                    %a{:href => "https://github.com/gtlaserbeast"} github 
+                  %a{:href => "https://github.com/gtlaserbeast"} github 
                   repos.
                 %p
                   Shoot me an
-                  = succeed "!" do
-                    %a{:href => "mailto:willcfisherjr@gmail.com?subject=[world-wide-will] Hello!"} email
+                  %a{:href => "mailto:willcfisherjr@gmail.com?subject=[world-wide-will] Hello!"} email
                   , or
                   give me a call:
                   %a{:href => "tel:+18432633471"} (843)263-3471
@@ -362,52 +361,51 @@
             / .col-sm-11
           / .content-wrapper
         / .section-wrapper
-        %article#contact.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg4.jpg"}
-          .content-wrapper.clearfix
-            %h1.section-title Contact
-            / CONTACT DETAILS
-            .contact-details.col-sm-5.col-md-3
-              %p
-                123A,
-                %br>/
-                Molestie Lorem Avenue,
-                %br>/
-                Aliquam
-                %br>/
-                AAA0010
-              %p Tel: (+20) 21 301 524
-              %p
-                %a{:href => "mailto:info@loremipsum.com"} info@loremipsum.com
-            / END: CONTACT DETAILS
-            / CONTACT FORM
-            .col-sm-7.col-md-9
-              / IMPORTANT: change the email address at the top of the php/mail.php file to the email address that you want this form to send to
-              %form.form-style.validate-form.clearfix{:action => "php/mail.php", :method => "POST", :role => "form"}
-                / form left col
-                .col-md-6
-                  .form-group
-                    %input#form-name.text-field.form-control.validate-field.required{"data-validation-type" => "string", :name => "name", :placeholder => "Full Name", :type => "text"}/
-                  .form-group
-                    %input#form-email.text-field.form-control.validate-field.required{"data-validation-type" => "email", :name => "email", :placeholder => "Email Address", :type => "email"}/
-                  .form-group
-                    %input#form-contact-number.text-field.form-control.validate-field.phone{"data-validation-type" => "phone", :name => "contact_number", :placeholder => "Contact Number", :type => "tel"}/
-                  .form-group.text-right
-                    %img#form-captcha-img{:src => "php/form_captcha/captcha_img.php"}/
-                    %input#form-captcha.text-field.form-control.validate-field.required{"data-validation-type" => "captcha", :name => "captcha", :placeholder => "Enter text", :type => "text"}/
-                    %span#form-captcha-refresh.fa.fa-refresh{:title => "Reload"}
-                / end: form left col
-                / form right col
-                .col-md-6
-                  .form-group
-                    %textarea.form-control.validate-field.required{:name => "message", :placeholder => "Message..."}
-                  .form-group
-                    %img.form-loader{:src => "images/theme_images/loader-form.GIF"}/
-                    %button.btn.btn-sm.btn-outline-inverse{:type => "submit"} Submit
-                  .form-group.form-general-error-container
-                / end: form right col
-            / end: CONTACT FORM
-          / .content-wrapper
-        / .section-wrapper
+        / %article#contact.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg4.jpg"}
+        /   .content-wrapper.clearfix
+        /     %h1.section-title Will Fisher
+        /     / CONTACT DETAILS
+        /     .contact-details.col-sm-5.col-md-3
+        /       %p
+        /         Beaufort, SC
+        /       %p 
+        /         %a{:href => "tel:843-263-3471"} (843)263-3471
+        /       %p
+        /         %a{:href => "mailto:willcfisherjr@gmail.com"} willcfisherjr@gmail.com
+        /       %p
+        /         Twitter: 
+        /         %a{:href => "https://twitter.com/willcfisherjr", :target => "_blank"} @willcfisherjr
+        /     / END: CONTACT DETAILS
+        /     / CONTACT FORM
+
+        /     .col-sm-7.col-md-9
+        /       / IMPORTANT: change the email address at the top of the php/mail.php file to the email address that you want this form to send to
+        /       %form.form-style.validate-form.clearfix{:action => "php/mail.php", :method => "POST", :role => "form"}
+        /         / form left col
+        /         .col-md-6
+        /           .form-group
+        /             %input#form-name.text-field.form-control.validate-field.required{"data-validation-type" => "string", :name => "name", :placeholder => "Full Name", :type => "text"}/
+        /           .form-group
+        /             %input#form-email.text-field.form-control.validate-field.required{"data-validation-type" => "email", :name => "email", :placeholder => "Email Address", :type => "email"}/
+        /           .form-group
+        /             %input#form-contact-number.text-field.form-control.validate-field.phone{"data-validation-type" => "phone", :name => "contact_number", :placeholder => "Contact Number", :type => "tel"}/
+        /           .form-group.text-right
+        /             %img#form-captcha-img{:src => "php/form_captcha/captcha_img.php"}/
+        /             %input#form-captcha.text-field.form-control.validate-field.required{"data-validation-type" => "captcha", :name => "captcha", :placeholder => "Enter text", :type => "text"}/
+        /             %span#form-captcha-refresh.fa.fa-refresh{:title => "Reload"}
+        /         / end: form left col
+        /         / form right col
+        /         .col-md-6
+        /           .form-group
+        /             %textarea.form-control.validate-field.required{:name => "message", :placeholder => "Message..."}
+        /           .form-group
+        /             %img.form-loader{:src => "images/theme_images/loader-form.GIF"}/
+        /             %button.btn.btn-sm.btn-outline-inverse{:type => "submit"} Submit
+        /           .form-group.form-general-error-container
+        /         / end: form right col
+        /     / end: CONTACT FORM
+        /   / .content-wrapper
+        / / .section-wrapper
       / #main-content
       / Footer
       %section#footer
@@ -429,12 +427,9 @@
               %img{:alt => "Octopress Blog", :src => "images/theme_images/social_icons/sharethis.png"}/
         / copyright text
         .footer-text-line © 2014 
-        %a{:href => "mailto:willcfisherjr@gmail.com?subject=[world-wide-will] Hello!"} willcfisherjr@gmail.com
+        %a{:href => "mailto:willcfisherjr@gmail.com?subject=[world-wide-will] Hello!", :title => "willcfisherjr@gmail.com"} willcfisherjr@gmail.com
         .footer-text-line | 
-        %a{:href => "tel:843-263-3471"} (843)263-3471
-      / end: Footer
-    / #outer-container
-    / end: Outer Container
+        %a{:href => "tel:843-263-3471", :title => "(843)263-3471"} (843)263-3471
     / Modal
     / DO NOT MOVE, EDIT OR REMOVE - this is needed in order for popup content to be populated in it
     #common-modal.modal.fade{"aria-hidden" => "true", :role => "dialog", :tabindex => "-1"}
@@ -442,10 +437,6 @@
         .modal-content
           %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
           .modal-body
-          / .modal-body
-        / .modal-content
-      / .modal-dialog
-    / .modal
     /
       Javascripts
       \==================================================

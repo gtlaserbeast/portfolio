@@ -52,7 +52,7 @@
           %li#menu-item-featured.menu-item.scroll
             %a{:href => "#featured", :title => "Some of my work!"} My Work
           %li#menu-item-grid.menu-item.scroll
-            %a{:href => "#grid", :title => "A way to display a series of facts."} Surprise & Delight
+            %a{:href => "#grid", :title => "A way to display a series of facts."} My Favorite Organizations
         / #main-menu
       / #left-sidebar
       / end: Left Sidebar
@@ -168,95 +168,32 @@
         %article#grid.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg2.jpg"}
           .content-wrapper.clearfix
             .col-sm-11.col-md-10.pull-right
-              %h1.section-title Surprise & Delight
+              %h1.section-title My Favorite Organizations
               / grid
               %section.grid.row.clearfix.clearfix-for-2cols
                 / grid item
                 .grid-item.col-md-6
                   .item-content.clearfix
-                    %span.icon.glyphicon.glyphicon-stats
+                    %span.icon.glyphicon
+                      %a{:href => "https://www.wrek.org/", :title => "wrek.org"}
+                        %img{:alt => "WREK", :src => "images/other_images/wrek.png", :width => "90%"}
                     .text-content
-                      %h5 Lorem ipsum dolor sit amet
-                      %p Nullam ac rhoncus sapien, non gravida purus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies.
+                      %h5 
+                        %a{:href => "https://www.wrek.org/", :title => "wrek.org"} WREK 91.1FM
+                      %p WREK is the entirely student managed, operated, and engineered radio station of Georgia Tech.
                   / end: .item-content
                 / end: .grid-item
                 / grid item
                 .grid-item.col-md-6
                   .item-content.clearfix
-                    %span.icon.glyphicon.glyphicon-record
+                    %span.icon.glyphicon
+                      %a{:href => "http://theironyard.com/", :title => "http://theironyard.com/"}
+                        %img{:alt => "TIY", :src => "images/other_images/iron-yard-logo.svg", :width => "90%"}
                     .text-content
-                      %h5 Aliquam adipiscing eros non elit
-                      %p Nullam ac rhoncus sapien, non gravida purus. Alinon elit imperdiet congue. Integer ultricies sed ligula eget tempus.
-                  / end: .item-content
-                / end: .grid-item
-                / grid item
-                .grid-item.col-md-6
-                  .item-content.clearfix
-                    %span.icon.glyphicon.glyphicon-lock
-                    .text-content
-                      %h5 Integer ultricies sed ligula
-                      %p Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula ligula eget.
-                  / end: .item-content
-                / end: .grid-item
-                / grid item
-                .grid-item.col-md-6
-                  .item-content.clearfix
-                    %span.icon.glyphicon.glyphicon-file
-                    .text-content
-                      %h5 Lorem ipsum dolor sit amet
-                      %p Nullam ac rhoncus. Aliquam adipiscing eros non elit imperdiet congue. Integer ultricies sed ligula eget tempus.
-                  / end: .item-content
-                / end: .grid-item
-              / end: grid
-            / .col-sm-11
-          / .content-wrapper
-        / .section-wrapper
-        / %article#contact.section-wrapper.clearfix{"data-custom-background-img" => "images/other_images/bg4.jpg"}
-        /   .content-wrapper.clearfix
-        /     %h1.section-title Will Fisher
-        /     / CONTACT DETAILS
-        /     .contact-details.col-sm-5.col-md-3
-        /       %p
-        /         Beaufort, SC
-        /       %p 
-        /         %a{:href => "tel:843-263-3471"} (843)263-3471
-        /       %p
-        /         %a{:href => "mailto:willcfisherjr@gmail.com"} willcfisherjr@gmail.com
-        /       %p
-        /         Twitter: 
-        /         %a{:href => "https://twitter.com/willcfisherjr", :target => "_blank"} @willcfisherjr
-        /     / END: CONTACT DETAILS
-        /     / CONTACT FORM
-
-        /     .col-sm-7.col-md-9
-        /       / IMPORTANT: change the email address at the top of the php/mail.php file to the email address that you want this form to send to
-        /       %form.form-style.validate-form.clearfix{:action => "php/mail.php", :method => "POST", :role => "form"}
-        /         / form left col
-        /         .col-md-6
-        /           .form-group
-        /             %input#form-name.text-field.form-control.validate-field.required{"data-validation-type" => "string", :name => "name", :placeholder => "Full Name", :type => "text"}/
-        /           .form-group
-        /             %input#form-email.text-field.form-control.validate-field.required{"data-validation-type" => "email", :name => "email", :placeholder => "Email Address", :type => "email"}/
-        /           .form-group
-        /             %input#form-contact-number.text-field.form-control.validate-field.phone{"data-validation-type" => "phone", :name => "contact_number", :placeholder => "Contact Number", :type => "tel"}/
-        /           .form-group.text-right
-        /             %img#form-captcha-img{:src => "php/form_captcha/captcha_img.php"}/
-        /             %input#form-captcha.text-field.form-control.validate-field.required{"data-validation-type" => "captcha", :name => "captcha", :placeholder => "Enter text", :type => "text"}/
-        /             %span#form-captcha-refresh.fa.fa-refresh{:title => "Reload"}
-        /         / end: form left col
-        /         / form right col
-        /         .col-md-6
-        /           .form-group
-        /             %textarea.form-control.validate-field.required{:name => "message", :placeholder => "Message..."}
-        /           .form-group
-        /             %img.form-loader{:src => "images/theme_images/loader-form.GIF"}/
-        /             %button.btn.btn-sm.btn-outline-inverse{:type => "submit"} Submit
-        /           .form-group.form-general-error-container
-        /         / end: form right col
-        /     / end: CONTACT FORM
-        /   / .content-wrapper
-        / / .section-wrapper
-      / #main-content
+                      %h5 
+                        %a{:href => "http://theironyard.com/", :title => "http://theironyard.com/"} The Iron Yard
+                      %p The Iron Yard Academy teaches intensive, three-month courses that mentor you into a professional junior-level programmer. They helped me get my groove back.
+                  
       / Footer
       %section#footer
         / Go to Top
